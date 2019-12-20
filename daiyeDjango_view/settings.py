@@ -24,7 +24,9 @@ SECRET_KEY = '=_ef#dhy@@*+y^v2e$khd-gsxr7%)5_us=f@869llf2&yr7y95'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#Debug = False
 
+#ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = []
 
 
@@ -37,12 +39,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'teacher_app',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
